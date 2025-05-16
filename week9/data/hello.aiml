@@ -1,0 +1,27 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+  <pattern> GREETINGS</pattern>
+  <template> Hi there</template>
+</category>
+<category>
+  <pattern>HI</pattern>
+  <template><srai>GREETINGS</srai></template>
+</category>
+
+<category>
+  <pattern>HELLO</pattern>
+  <template><srai>GREETINGS</srai></template>
+</category>
+
+<category>
+  <pattern>GOOD MORNING</pattern>
+  <template><srai>GREETINGS</srai></template>
+</category>
+
+<category>
+  <pattern>GOOD AFTERNOON</pattern>
+  <template><srai>GREETINGS</srai></template>
+</category>
+
+</aiml>

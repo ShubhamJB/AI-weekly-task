@@ -1,0 +1,73 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+  <pattern> GREETINGS</pattern>
+  <template> Hi there!</template>
+</category>
+
+<category>
+  <pattern>WHAT IS LONG TERM KNOWLEDGE</pattern>
+  <template>Long-term knowledge is valid over a period of time.</template>
+</category>
+
+<category>
+  <pattern>WHAT IS SHORT TERM KNOWLEDGE</pattern>
+  <template>Short-term knowledge is only valid for a particular situation or run of a programme.</template>
+</category>
+
+<category>
+  <pattern>WHAT IS GENERIC KNOWLEDGE</pattern>
+  <template>Generic knowledge is relevant to more than one application or domain.</template>
+</category>
+
+<category>
+  <pattern>WHAT IS DOMAIN SPECIFIC KNOWLEDGE</pattern>
+  <template>Domain-specific knowledge is only applicable to one specific application or domain.</template>
+</category>
+
+<category>
+  <pattern>WHAT IS A FACT</pattern>
+  <template>A fact is a statement which asserts that a relationship holds for an object-subject pair.</template>
+</category>
+
+<category>
+  <pattern>WHAT IS A RULE</pattern>
+  <template>A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.</template>
+</category>
+
+<category>
+  <pattern>GIVE ME AN EXAMPLE OF LONG TERM GENERIC KNOWLEDGE</pattern>
+  <template>Generative AI frequently hallucinates and produces incorrect results.</template>
+</category>
+
+<category>
+  <pattern>GIVE ME AN EXAMPLE OF LONG TERM DOMAIN SPECIFIC KNOWLEDGE</pattern>
+  <template>The formal specification of a particular machine learning algorithm.</template>
+</category>
+
+<category>
+  <pattern>GIVE ME AN EXAMPLE OF SHORT TERM GENERIC KNOWLEDGE</pattern>
+  <template>The date today is an example as it may be useful in different contexts but only lasts 24 hours.</template>
+</category>
+
+<category>
+  <pattern>GIVE ME AN EXAMPLE OF SHORT TERM DOMAIN SPECIFIC KNOWLEDGE</pattern>
+  <template>The deadline for the submission of this portfolio.</template>
+</category>
+
+<category>
+  <pattern>GIVE ME AN EXAMPLE OF A RULE</pattern>
+  <template>If submitsOthersWork(X) then commitsAssessmentOffence(X).</template>
+</category>
+
+<category>
+  <pattern>GIVE ME AN EXAMPLE OF A FACT</pattern>
+  <template>Submissions for this module are run through automatic and effective plagiarism checks.</template>
+</category>
+
+<category>
+  <pattern>GIVE ME A DEFINITION OF LONG TERM KNOWLEDGE</pattern>
+  <template>Long-term knowledge is valid over a period of time.</template>
+</category>
+
+</aiml>
