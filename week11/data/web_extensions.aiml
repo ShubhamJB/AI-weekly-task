@@ -1,0 +1,58 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+    <pattern> GOOGLE *</pattern>
+    <template>
+        <think>
+            <set name="runquery"><get name="openURLCommand"/> http://www.google.co.uk/search?q=<star/></set>
+        </think>
+        If the tab does not open, here is a clickable link <get name="runquery"/>
+        <system><get name="runquery"/></system>
+    </template>
+</category>
+
+<category>
+  <pattern> IMAGES *</pattern>
+  <template>
+        <think>
+            <set name="runquery"><get name="openURLCommand"/> http://www.google.co.uk/images?q=<star/></set>
+        </think>
+        If the tab does not open, here is a clickable link <get name="runquery"/>
+        <system><get name="runquery"/></system>
+    </template>
+</category>
+
+<category>
+    <pattern> MAP OF *</pattern>
+    <template>
+        <think>
+            <set name="runquery"><get name="openURLCommand"/> http://www.google.co.uk/maps?q=<star/></set>
+        </think>
+        If the tab does not open, here is a clickable link <get name="runquery"/>
+        <system><get name="runquery"/></system>
+    </template>
+</category>
+
+<category>
+    <pattern> WIKIPEDIA * </pattern>
+    <template>
+        <think>
+            <set name="runquery"><get name="openURLCommand"/> https://en.wikipedia.org/wiki/<star/></set>
+        </think>
+        If the tab does not open, here is a clickable link <get name="runquery"/>
+        <system><get name="runquery"/></system>
+    </template>
+</category>
+
+<category>
+    <pattern> CALCULATE * </pattern>
+    <template>
+        <think>
+            <set name="runquery"><get name="openURLCommand"/> http://www.google.co.uk/search?q=<star/></set>
+        </think>
+        If the tab does not open, here is a clickable link <get name="runquery"/>
+        <system><get name="runquery"/></system>
+    </template>
+</category>
+
+</aiml>

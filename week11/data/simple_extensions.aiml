@@ -1,0 +1,22 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+    <pattern> WHAT OPERATING SYSTEM ARE YOU RUNNING ON</pattern>
+    <template><get name="osname" /></template>
+</category>
+
+<category>
+    <pattern> WHAT IS THE TIME </pattern>
+    <template> 
+          It is <system><get name = "getTimeCommand"/></system>
+    </template>
+</category>
+
+<category>
+    <pattern> WHAT IS THE DATE </pattern>
+    <template> 
+        Today is <system><get name="getDateCommand"/></system>
+    </template>
+</category>
+
+</aiml>
