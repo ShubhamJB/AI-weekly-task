@@ -1,0 +1,36 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+  <pattern> TELL ME A JOKE</pattern>
+  <template> 
+    <random>
+      <li> Why did the chicken cross the road?</li>
+      <li> What do you get when you cross a sheep with a kangaroo?</li>
+      <li> Why don't ants get sick?</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern> I DO NOT KNOW </pattern>
+  <that>WHY DID THE CHICKEN CROSS THE ROAD</that>
+  <template> To get to the other side</template>
+</category>
+
+<category>
+  <pattern> I DO NOT KNOW </pattern>
+  <that>WHAT DO YOU GET WHEN YOU CROSS A SHEEP WITH A KANGAROO</that>
+  <template> A woolly jumper</template>
+</category>
+
+<category>
+  <pattern> I DO NOT KNOW </pattern>
+  <that>WHY DO NOT ANTS GET SICK</that>
+  <template> Because they have little anty-bodies</template>
+</category>
+
+<category>
+  <pattern> I DO NOT KNOW</pattern>
+  <template> Default answer. Last thing the bot said was:<that/></template>
+</category>
+</aiml>

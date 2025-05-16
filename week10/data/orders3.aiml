@@ -1,0 +1,47 @@
+<aiml>
+
+
+<!-- add your five categories using srai in the template to match the phrases from the list  onto GIVE LOCATION -->
+    
+<category>
+  <pattern>WHERE IS IT</pattern>
+  <template><srai>GIVE LOCATION</srai></template>
+</category>
+
+<category>
+  <pattern>WHERE DO I FIND IT</pattern>
+  <template><srai>GIVE LOCATION</srai></template>
+</category>
+
+<category>
+  <pattern>I CAN NOT FIND IT</pattern>
+  <template><srai>GIVE LOCATION</srai></template>
+</category>
+
+<category>
+  <pattern>I DO NOT KNOW WHERE TO FIND IT</pattern>
+  <template><srai>GIVE LOCATION</srai></template>
+</category>
+
+<category>
+  <pattern>CAN YOU TELL ME WHERE TO FIND IT</pattern>
+  <template><srai>GIVE LOCATION</srai></template>
+</category>
+
+<!-- complete these two categories to respond to different conversation history using <that> tag-pairs-->
+
+<category>
+ <pattern>GIVE LOCATION</pattern>
+ <!-- add that tag-pair here -->
+ <that>YOUR ORDER * HAS BEEN MARKED AS DELIVERED</that>
+ <template>It may be in your safe place or with a neighbour</template>
+</category>
+
+<category>
+ <pattern>GIVE LOCATION</pattern>
+ <!-- add that tag-pair here -->
+ <that>OK HAPPY TO HELP PLEASE ENTER YOUR ORDER NUMBER IN THE FORMAT MY ORDER NUMBER IS XXXXX</that>
+ <template>Your order number is in your confirmation email</template>
+</category>
+
+</aiml>

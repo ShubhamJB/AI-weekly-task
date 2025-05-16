@@ -1,0 +1,35 @@
+<aiml>
+<category>
+  <pattern>TRACK ORDER REQUEST</pattern>
+    <template> OK, happy to help. Please enter your order number in the format: my order number is xxxxx</template>
+</category>
+
+
+<!-- add your categories below this line-->
+
+<category>
+  <pattern>I WANT TO TRACK MY ORDER</pattern>
+  <template><srai>TRACK ORDER REQUEST</srai></template>
+</category>
+
+<category>
+  <pattern>PLEASE GIVE ME A STATUS UPDATE ON MY ORDER</pattern>
+  <template><srai>TRACK ORDER REQUEST</srai></template>
+</category>
+
+<category>
+  <pattern>WHERE IS MY ORDER IT HASNT ARRIVED YET</pattern>
+  <template><srai>TRACK ORDER REQUEST</srai></template>
+</category>
+
+<category>
+  <pattern>HAVE YOU SENT MY ORDER YET</pattern>
+  <template><srai>TRACK ORDER REQUEST</srai></template>
+</category>
+
+<category>
+  <pattern>WHERE IS MY ORDER</pattern>
+  <template><srai>TRACK ORDER REQUEST</srai></template>
+</category>
+
+</aiml>

@@ -1,0 +1,5 @@
+45 question-response pairs read for testing your bot.
+AIML file student.aiml passes basic xml syntax checks.
+Passed aiml-specific syntax check.
+After reading your file the bot has 9 categories.
+Congratulations,you score 100 because you have beaten Jim's attempt!

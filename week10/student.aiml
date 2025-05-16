@@ -1,0 +1,83 @@
+<aiml>
+
+<category>
+    <pattern>WHAT IS *</pattern>
+    <template>
+        <think>
+            <set name="topic"><star/></set> 
+        </think>
+        <condition name="topic">
+            <li value="long-term knowledge">Long-term knowledge is valid over a period of time.</li>
+            <li value="short-term knowledge">Short-term knowledge is only valid for a particular situation or run of a programme.</li>
+            <li value="generic knowledge">Generic knowledge is relevant to more than one application or domain.</li>
+            <li value="domain-specific knowledge">Domain-specific knowledge is only applicable to one specific application or domain.</li>
+            <li value="a fact">A fact is a statement which asserts that a relationship holds for an object-subject pair.</li>
+            <li value="a rule">A rule is a statement that generates new knowledge by asserting that if one fact is true, then another is also true.</li>
+            <li value="a rule mybot"><srai>WHAT IS a rule</srai></li>
+        </condition>
+      </template>
+  </category>
+
+  <category>
+    <pattern>* EXAMPLE OF *</pattern>
+    <template>
+        <think><set name="topic"><star index="2"/></set></think>
+        <condition name="topic">
+            <li value="long-term generic knowledge">Generative AI frequently hallucinates and produces incorrect results.</li>
+            <li value="long-term domain-specific knowledge">The formal specification of a particular machine learning algorithm.</li>
+            <li value="short-term generic knowledge">The date today is an example as it may be useful in different contexts but only lasts 24 hours.</li>
+            <li value="short-term domain-specific knowledge">The deadline for the submission of this portfolio.</li>
+            <li value="a rule">If submitsOthersWork(X) then commitsAssessmentOffence(X).</li>
+            <li value="a fact">Submissions for this module are run through automatic and effective plagiarism checks.</li>
+        </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* DEFINITION OF *</pattern>
+    <template><srai>WHAT IS <star index="2"/></srai></template>
+  </category>
+
+  <category>
+    <pattern>TELL ME ABOUT *</pattern>
+    <template><srai>WHAT IS <star/></srai></template>
+  </category>
+  
+  <category>
+    <pattern>* MYBOT * RULE</pattern>
+    <template><srai>WHAT IS a rule</srai></template>
+  </category>
+
+  <category>
+    <pattern>ILLUSTRATE THE CONCEPT OF *</pattern>
+    <template><srai>GIVE ME AN EXAMPLE OF <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS THE WAY THAT AIML ALLOWS VARIABLES IN ITS LONG TERM KNOWLEDGE</pattern>
+    <template>
+    <think><set name="topic">aiml_variables</set></think>
+    AIML has wildcards and srai for that purpose.
+    </template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS THE WAY AIML SUPPORTS CONTEXT DURING A CONVERSATION</pattern>
+    <template>
+      <think><set name="topic">aiml_context</set></think>
+      AIML supports context through the use of the that tag to refer to previous bot answers, and via setting variables such as topic.
+    </template>
+  </category>
+
+  <category>
+    <pattern>WHY IS KNOWING THAT USEFUL</pattern>
+    <template>
+      <condition name="topic">
+        <li value="a fact">To remind you that we take assessment offences very seriously.</li>
+        <li value="aiml_variables">Because it allows us to make statements that apply to classes of things or questions.</li>
+        <li value="aiml_context">Because some words like that and it can only be understood in the context of previous sentences.</li>
+      </condition>
+    </template>
+  </category>
+
+</aiml>
